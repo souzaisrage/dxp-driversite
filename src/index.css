@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Varelmo";
+    src: url(../public/fonts/Varelmo.otf);
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.logo-spin {
+    transition: transform 0.5s ease;
+}
+
+
+.logo-spin:hover {
+    animation: spin 1s linear infinite;
+}
+
+.fade-title:hover{
+    transition:ease-in;
+}
+  
+
