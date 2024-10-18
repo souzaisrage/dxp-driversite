@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+
+
 export default function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -11,7 +13,7 @@ export default function App() {
     <>
       <header className="flex justify-between items-center p-4 bg-red-600">
         <div className="flex items-center space-x-4">
-          <img 
+          <img
             src="/src/assets/dxplogo.png" 
             alt="DriverXPress Logo" 
             className="h-12 w-12 logo-spin" 
@@ -33,17 +35,23 @@ export default function App() {
             </svg>
             FAQs
           </button>
+         <a href="https://paypal.me/Souzawow?country.x=PT&locale.x=en_US" target='_blank'><button className="text-white hover:text-gray-400 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="39px" fill="#e8eaed">
+          <path d="M640-440 474-602q-31-30-52.5-66.5T400-748q0-55 38.5-93.5T532-880q32 0 60 13.5t48 36.5q20-23 48-36.5t60-13.5q55 0 93.5 38.5T880-748q0 43-21 79.5T807-602L640-440Zm0-112 109-107q19-19 35-40.5t16-48.5q0-22-15-37t-37-15q-14 0-26.5 5.5T700-778l-60 72-60-72q-9-11-21.5-16.5T532-800q-22 0-37 15t-15 37q0 27 16 48.5t35 40.5l109 107ZM280-220l278 76 238-74q-5-9-14.5-15.5T760-240H558q-27 0-43-2t-33-8l-93-31 22-78 81 27q17 5 40 8t68 4q0-11-6.5-21T578-354l-234-86h-64v220ZM40-80v-440h304q7 0 14 1.5t13 3.5l235 87q33 12 53.5 42t20.5 66h80q50 0 85 33t35 87v40L560-60l-280-78v58H40Zm80-80h80v-280h-80v280Zm520-546Z"/>
+          </svg>
+            Donate
+          </button>
+          </a>
           <div className="relative">
             <button onClick={toggleDropdown} className="text-white hover:text-gray-400 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" className="mr-2">
-                <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
-              </svg>
-              Download
+              <img src="src\assets\Orion_github.svg" 
+              alt="Github Icon" 
+              className="mr-2 h-6 w-6" />
+            Github
             </button>
             {isDropdownOpen && (
               <div className="absolute right-0 mt-2 bg-red-600 text-white py-2 rounded shadow-lg z-10">
-                <button className="block px-4 py-2 w-full text-left hover:bg-red-400">GitHub Repository</button>
-                <button className="block px-4 py-2 w-full text-left hover:bg-red-400">Donate</button>
+                <a href="https://github.com/souzaisrage/dxp-driversapp" target='_blank'><button className="block px-4 py-2 w-full text-left hover:bg-red-400">GitHub Repository</button></a>
               </div>
             )}
           </div>
@@ -68,13 +76,13 @@ export default function App() {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <img 
-              src="" 
+              src="src\assets\easy fast and free (1).png" 
               alt="Driver Update" 
               className="rounded-lg shadow-lg"
             />
           </div>
           <div className="md:w-1/2 ">
-            <h3 className="text-2xl font-bold mb-4">Why Keeping Your Drivers Updated Matters</h3>
+            <h3 className="text-2xl font-bold mb-4  text-white">Why Keeping Your Drivers Updated Matters</h3>
             <p className="text-white mb-4">
               Regular driver updates ensure your hardware performs at its best. Outdated drivers can cause
               compatibility issues, crashes, and slowdowns. With DriverXPress, staying up-to-date has never
@@ -85,8 +93,7 @@ export default function App() {
             </button>
           </div>
         </div>
-</section>
-
+      </section>
     </>
   );
 }

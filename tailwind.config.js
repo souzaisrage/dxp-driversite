@@ -9,5 +9,7 @@ export default {
       varelmo: ["Varelmo","sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')  // Add this line to use the scrollbar hide plugin
+  ],
 }
