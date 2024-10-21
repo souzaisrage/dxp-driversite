@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-
-
 export default function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -14,7 +12,7 @@ export default function App() {
       <header className="flex justify-between items-center p-4 bg-red-600">
         <div className="flex items-center space-x-4">
           <img
-            src="/src/assets/dxplogo.png" 
+            src="public/dxplogo.png" 
             alt="DriverXPress Logo" 
             className="h-12 w-12 logo-spin" 
           />
@@ -44,7 +42,7 @@ export default function App() {
           </a>
           <div className="relative">
             <button onClick={toggleDropdown} className="text-white hover:text-gray-400 flex items-center">
-              <img src="src\assets\Orion_github.svg" 
+              <img src="public/Orion_github.svg" 
               alt="Github Icon" 
               className="mr-2 h-6 w-6" />
             Github
@@ -61,7 +59,7 @@ export default function App() {
       <section className="relative flex items-center justify-center h-96 bg-gray-900">
         <video 
           className="absolute inset-0 w-full h-full object-cover blur-md" 
-          src="src\assets\redloopvideo.mp4" 
+          src="public/redloopvideo.mp4" 
           autoPlay 
           muted 
           loop
@@ -76,8 +74,7 @@ export default function App() {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <img 
-              src="src\assets\easy fast and free (1).png" 
-              alt="Driver Update" 
+              src="public/imagedude.png" 
               className="rounded-lg shadow-lg"
             />
           </div>
