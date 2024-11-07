@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import dxplogo from "../public/Images/dxplogo.png";
+import imagedude from "../public/Images/imagedude.png";
+import videoloop from "../public/Images/redloopvideo.mp4";
+import githublogo from "../public/Images/Orion_github.svg";
+
 
 const BASE_URL = import.meta.env.BASE_URL;
 export default function App() {
@@ -11,7 +16,7 @@ export default function App() {
       <header className="flex justify-between items-center p-4 bg-red-600">
         <div className="flex items-center space-x-4">
           <img
-            src="public\Images\dxplogo.png" 
+            src={dxplogo} 
             alt="DriverXPress Logo" 
             className="h-12 w-12 logo-spin" 
           />
@@ -35,7 +40,7 @@ export default function App() {
           </a>
           <div className="relative">
            <a href="https://github.com/souzaisrage/dxp-driversapp" target='_blank'><button className="text-white hover:text-black transition-colors duration-300 ease-in-out flex items-center">
-              <img src="public\Images\Orion_github.svg" 
+              <img src={githublogo}
               alt="Github Icon" 
               className="mr-2 h-6 w-6" />
             Github
@@ -47,7 +52,7 @@ export default function App() {
       <section className="relative flex items-center justify-center h-96 bg-gray-900">
         <video 
           className="absolute inset-0 w-full h-full object-cover blur-md" 
-          src="public\Images\redloopvideo.mp4" 
+          src={videoloop} 
           autoPlay 
           muted 
           loop
@@ -62,7 +67,7 @@ export default function App() {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <img 
-              src="public\Images\imagedude.png" 
+              src={imagedude}
               className="rounded-lg shadow-lg"
             />
           </div>
