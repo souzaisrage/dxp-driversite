@@ -1,4 +1,6 @@
 # **DriverXpress 🚀**
+> [!NOTE]
+> @NotZeetaa is dogshit
 
  ## ✨ About DriverXpress
 Welcome to DriverXpress – your go-to application for hassle-free driver updates! The DriverXpress site allows you to easily download our app, a fast and user-friendly solution for keeping your system’s drivers up to date. Say goodbye to outdated drivers, and let DriverXpress do the heavy lifting.
@@ -29,6 +31,5 @@ Encountered an issue? Have questions? Feel free to open an issue or contact us d
 ### 📜 License
 DriverXpress is licensed under the MIT License. See LICENSE for more information.
 
-### 🌐 [Website](souzaisrage.github.io/dxp-driversite/)
-
-![Design sem nome (1)](https://github.com/user-attachments/assets/ee58b60d-5dd7-471d-898d-8c184f26cf07)
+### 🌐 Website
+Link in bio
