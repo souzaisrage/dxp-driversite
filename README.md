@@ -32,4 +32,4 @@ Encountered an issue? Have questions? Feel free to open an issue or contact us d
 DriverXpress is licensed under the MIT License. See LICENSE for more information.
 
 ### 🌐 Website
-Link in bio
+Link in "About"
