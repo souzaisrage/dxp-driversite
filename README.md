@@ -1,6 +1,6 @@
 # **DriverXpress 🚀**
-> [!NOTE]
-> @NotZeetaa is dogshit
+> [!WARNING]
+> APP UNDER DEVELOPMENT
 
  ## ✨ About DriverXpress
 Welcome to DriverXpress – your go-to application for hassle-free driver updates! The DriverXpress site allows you to easily download our app, a fast and user-friendly solution for keeping your system’s drivers up to date. Say goodbye to outdated drivers, and let DriverXpress do the heavy lifting.
