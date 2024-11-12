@@ -75,7 +75,10 @@ export default function App() {
         ></video>
         <div className="relative z-10 flex flex-col items-center space-y-6 text-white">
           <h2 className="text-4xl font-bold font">Optimize Your System with the Latest Drivers</h2>
-          <button className="px-6 py-3 bg-red-600 hover:bg-red-500 rounded-full text-white">Download Now</button>
+          <button className="px-6 py-3 bg-red-600 hover:bg-red-500 rounded-full text-white flex items-center gap-2">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/windows-10.png" alt="Windows 10 Icon" className="w-5 h-5 pl-0 ml-0"/>
+             Download
+          </button>
         </div>
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </section>
