@@ -55,7 +55,7 @@ export default function App() {
           </button>
           </a>
           <div className="relative">
-           <a href="https://github.com/souzaisrage/dxp-driversapp" target='_blank'><button className="text-white hover:text-black transition-colors duration-300 ease-in-out flex items-center">
+           <a href="https://github.com/souzaisrage/dxp-app" target='_blank'><button className="text-white hover:text-black transition-colors duration-300 ease-in-out flex items-center">
               <img src={githublogo}
               alt="Github Icon" 
               className="mr-2 h-6 w-6" />
