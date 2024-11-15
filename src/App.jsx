@@ -31,6 +31,7 @@ export default function App() {
     }
 }
 
+
   return (
     <>
       <header className="flex justify-between items-center p-4 bg-red-600">
@@ -142,7 +143,42 @@ export default function App() {
             </button>
           </div>
         </div>
+        <hr className="border-t-2 border-gray-500" />
+        <div className="bg-black text-white py-8 mt-8 text-center">
+          <div className="space-y-6">
+            
+            <div className="flex justify-center space-x-6">
+              <a
+                href="https://github.com/souzaisrage/dxp-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-400 transition-colors"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.paypal.com/paypalme/Souzawow"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-400 transition-colors"
+              >
+                Donate
+              </a>    
+            </div>      
+            <p className="text-sm text-gray-500">
+              © 2024 DriverXPress. All Rights Reserved.
+            </p>
+            <p className="text-sm text-gray-500">
+              Developed with ❤️ by <a href="https://github.com/souzaisrage" target='_blank' className="text-white hover:text-gray-400">souzaisrage</a>
+            </p>
+            <p className="text-sm text-gray-500">
+              This project is licensed under the <a href="https://opensource.org/licenses/MIT" target='_blank' className="text-white hover:text-gray-400">MIT License</a>.
+            </p>
+          </div>
+        </div> 
       </section>
     </>
   );
 }
+
+
