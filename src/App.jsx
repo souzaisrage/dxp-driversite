@@ -3,6 +3,7 @@ import dxplogo from "../public/Images/dxplogo.png";
 import imagedude from "../public/Images/imagedude.png";
 import videoloop from "../public/Images/redloopvideo.mp4";
 import githublogo from "../public/Images/Orion_github.svg";
+import windowsLogo from "../public/Images/windowslogo.png";
 
 
 const BASE_URL = import.meta.env.BASE_URL;
@@ -16,7 +17,7 @@ export default function App() {
     var text = document.getElementById("textP");
     var textpT = document.getElementById("textPT");
 
-    if (butao.innerHTML === "FAQ's") {
+    if (butao.innerHTML.trim() === "FAQ's") {
         butao.innerHTML = "Return";
         text.innerHTML = `
             <p style="margin-bottom: 15px;"><strong style="color: red;">1. What is DriverXpress?</strong> DriverXpress is an application designed to help find and install the necessary drivers for a computer to function properly. It simplifies the driver update and installation process, saving time and ensuring your system is always up-to-date.</p>
@@ -29,8 +30,6 @@ export default function App() {
         textpT.innerHTML = "Why Keeping Your Drivers Updated Matters"; 
     }
 }
-
-
 
   return (
     <>
@@ -90,10 +89,35 @@ export default function App() {
         ></video>
         <div className="relative z-10 flex flex-col items-center space-y-6 text-white">
           <h2 className="text-4xl font-bold font">Optimize Your System with the Latest Drivers</h2>
-          <button className="px-6 py-3 bg-red-600 hover:bg-red-500 rounded-full text-white flex items-center gap-2">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/windows-10.png" alt="Windows 10 Icon" className="w-5 h-5 pl-0 ml-0"/>
-             Download
-          </button>
+          <p class="text-sm text-gray-500 mt-2 flex items-center justify-center">
+              <img
+                src={windowsLogo}
+                alt="Windows Logo"
+                class="w-4 h-4 mr-1"
+              />
+              Windows
+            </p>
+          <div class="text-center">
+            <button
+              class="cursor-pointer flex justify-between bg-red-600 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-black hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]"
+            >
+              Download
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5 animate-bounce"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </section>
@@ -112,7 +136,8 @@ export default function App() {
               compatibility issues, crashes, and slowdowns. With DriverXPress, staying up-to-date has never
               been easier. Keep your system running smoothly with the latest drivers at your fingertips.
             </p>
-            <button onClick={changeText} id="learnButton" className="px-6 py-3 bg-red-600 hover:bg-red-500 rounded-full text-white">
+            <button onClick={changeText} id="learnButton" class="bg-red-950 text-white border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+              <span class="bg-emerald-400 shadow-emerald-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
               FAQ's
             </button>
           </div>
