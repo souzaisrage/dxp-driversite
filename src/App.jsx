@@ -27,8 +27,8 @@ export default function App() {
         textpT.innerHTML = "Here are some frequently asked questions (FAQ's)";
     } else {
         butao.innerHTML = "FAQ's"; 
-        text.innerHTML = "Regular driver updates ensure your hardware performs at its best. Outdated drivers can cause compatibility issues, crashes, and slowdowns. With DriverXPress, staying up-to-date has never been easier. Keep your system running smoothly with the latest drivers at your fingertips."; 
-        textpT.innerHTML = "Why Keeping Your Drivers Updated Matters"; 
+        text.innerHTML = "Regular driver updates and system tweaks are essential for maintaining peak performance. Outdated drivers and improper settings can cause compatibility issues, crashes, and slowdowns. With DriverXPress, keeping your system optimized and up-to-date has never been easier. Ensure smooth operation with the latest drivers and helpful tweaks right at your fingertips."; 
+        textpT.innerHTML = "Why Tweaking and Updating Your Drivers Matters"; 
     }
 }
 
