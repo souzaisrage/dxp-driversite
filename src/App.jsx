@@ -10,26 +10,6 @@ const BASE_URL = import.meta.env.BASE_URL;
 export default function App() {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  function changeText() {
-    var butao = document.getElementById("learnButton");
-    var text = document.getElementById("textP");
-    var textpT = document.getElementById("textPT");
-
-    if (butao.innerHTML.trim() === "FAQ's") {
-        butao.innerHTML = "Return";
-        text.innerHTML = `
-            <p style="margin-bottom: 15px;"><strong style="color: red;">1. What makes DriverXpress different from other driver updater tools?</strong> Unlike many driver update tools, DriverXpress not only updates your drivers but also provides system tweaks for optimized performance. It’s an all-in-one solution to keep your system running at its best.</p>
-            <p style="margin-bottom: 15px;"><strong style="color: red;">2. Can DriverXpress help with driver compatibility issues?</strong> Yes, DriverXpress helps resolve compatibility issues by ensuring your system has the latest drivers that match your hardware perfectly, reducing errors and improving system stability.</p>
-            <p style="margin-bottom: 15px;"><strong style="color: red;">3. How frequently should I update my drivers?</strong> We recommend checking for driver updates regularly, especially if you notice performance issues, crashes, or new software/hardware installations. DriverXpress makes it easy to stay up-to-date without the hassle.</p>
-            <p style="margin-bottom: 15px;"><strong style="color: red;">4. Will DriverXpress affect my computer's performance?</strong> No, DriverXpress is designed to improve your computer's performance by keeping your drivers updated and making essential system tweaks. It helps avoid slowdowns caused by outdated drivers and incorrect settings.</p>`;
-        textpT.innerHTML = "Here are some frequently asked questions (FAQ's)";
-    } else {
-        butao.innerHTML = "FAQ's"; 
-        text.innerHTML = "Regular driver updates and system tweaks are essential for maintaining peak performance. Outdated drivers and improper settings can cause compatibility issues, crashes, and slowdowns. With DriverXPress, keeping your system optimized and up-to-date has never been easier. Ensure smooth operation with the latest drivers and helpful tweaks right at your fingertips."; 
-        textpT.innerHTML = "Why Tweaking and Updating Your Drivers Matters"; 
-    }
 }
 
   return (
@@ -89,7 +69,7 @@ export default function App() {
           loop
         ></video>
         <div className="relative z-10 flex flex-col items-center space-y-6 text-white">
-          <h2 className="text-4xl font-bold font">App to Tweak and Update Your Device Drivers</h2>
+          <h2 className="text-4xl font-bold font">Tweak Your System and Update Your Device Drivers Now!</h2>
           <p class="text-sm text-gray-500 mt-2 flex items-center justify-center">
               <img
                 src={windowsLogo}
@@ -123,7 +103,7 @@ export default function App() {
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </section>
       <section className="bg-black p-8">
-        <div className="flex flex-col md:flex-row items-center md:space-x-8">
+      <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <img 
               src={imagedude}
@@ -135,10 +115,7 @@ export default function App() {
             <p id="textP" className="text-white mb-4">
             Regular driver updates and system tweaks are essential for maintaining peak performance. Outdated drivers and improper settings can cause compatibility issues, crashes, and slowdowns. With DriverXPress, keeping your system optimized and up-to-date has never been easier. Ensure smooth operation with the latest drivers and helpful tweaks right at your fingertips.
             </p>
-            <button onClick={changeText} id="learnButton" class="bg-red-950 text-white border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-              <span class="bg-emerald-400 shadow-emerald-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-              FAQ's
-            </button>
+           
           </div>
         </div>
         <hr className="border-t-2 border-gray-500" />
